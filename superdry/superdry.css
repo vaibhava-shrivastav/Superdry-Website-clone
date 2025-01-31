@@ -1,7 +1,10 @@
 * {
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box;
+  box-sizing: border-box; 
+}
+.header-wrapper {
+  height: 100px; 
 }
 
 .symbols {
@@ -14,40 +17,68 @@
   height: 100px;
   display: flex;
   padding: 30px;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
 }
 
-.o{
+.o {
   display: flex;
 }
 
-.logo{
+.logo {
   transform: scale(0.7);
   margin-left: 8%;
 }
 
-.menu{
+.menu {
   margin-right: 30px;
   transform: scale(1.3);
 }
 
-.user{
+.user {
   margin-right: 30px;
   transform: scale(1.3);
 }
 
-.wishlist{
+.wishlist {
   margin-right: 30px;
   transform: scale(1.3);
 }
 
-.cart{
+.cart {
   margin-right: 30px;
   transform: scale(1.3);
 }
 
-.p{
+.slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-top: 10px;
+}
+
+.imgslider {
+  display: flex;
+  width: 200%;
+  animation: slide 8s infinite linear;
+}
+
+.imgslider img {
+  width: 50%;
+  height: auto;
+  flex-shrink: 0;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-51%);
+  }
+}
+
+.p {
   display: flex;
 }
 
@@ -109,7 +140,7 @@ a {
   text-decoration: underline;
 }
 
-.head{
+.head {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -117,16 +148,16 @@ a {
   margin-bottom: 30px;
 }
 
-.CATEGORY{
+.CATEGORY {
   margin-bottom: 50px;
 }
 
-.cards{
+.cards {
   display: flex;
   justify-content: space-evenly;
 }
 
-.cat{
+.cat {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -136,28 +167,28 @@ a {
   margin-bottom: 10px;
 }
 
-.imgs:hover{
+.imgs:hover {
   transform: scale(1.1);
 }
 
-.seasonal{
+.seasonal {
   margin-bottom: 10px;
   text-decoration: underline;
 }
 
-.cards1{
+.cards1 {
   display: flex;
   justify-content: space-between;
   padding: 15px;
 }
 
-.c{
+.c {
   margin: 15px;
   display: flex;
   flex-direction: column;
 }
 
-.cat1{
+.cat1 {
   display: flex;
   justify-content: start;
   align-items: center;
@@ -166,7 +197,7 @@ a {
   margin-bottom: 10px;
 }
 
-.desc{
+.desc {
   display: flex;
   justify-content: start;
   align-items: center;
@@ -175,108 +206,108 @@ a {
   margin-bottom: 10px;
 }
 
-.now{
+.now {
   color: red;
 }
 
-.form{
-  background-color:rgb(255, 252, 241);
+.form {
+  background-color: rgb(255, 252, 241);
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 300px;
 }
 
-.stay{
+.stay {
   display: flex;
   justify-content: center;
   padding: 10px;
   font-size: xx-large;
 }
 
-.desc{
+.desc {
   display: flex;
   justify-content: center;
   padding-bottom: 10px;
 }
 
-.email{
+.email {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
 }
 
-.f{
+.f {
   display: flex;
 }
-.input{
+.input {
   border: none;
   border-bottom: 2px solid black;
   width: 550px;
   height: 50px;
   padding: 15px 20px;
   font: larger;
-  text-decoration-line:underline ;
+  text-decoration-line: underline;
   margin-right: 30px;
 }
 
-.input::placeholder{
-  font-family:'Times New Roman', Times, serif;
+.input::placeholder {
+  font-family: "Times New Roman", Times, serif;
   font-size: larger;
 }
 
-.agree{
+.agree {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 50px;
 }
 
-.check{
+.check {
   margin-right: 20px;
 }
 
-.footer{
+.footer {
   display: flex;
   justify-content: space-around;
   color: aliceblue;
   background-color: black;
-  height: 150px; 
+  height: 150px;
 }
 
-.container1{
+.container1 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.container2{
+.container2 {
   height: 120px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.container3{
+.container3 {
   height: 70px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.foot{
+.foot {
   color: aliceblue;
   font-family: monospace;
   font-size: medium;
 }
 
-.foot:hover{
+.foot:hover {
   color: red;
   font-family: monospace;
   font-size: medium;
 }
 
-.footer1{
+.footer1 {
   background-color: rgb(193, 192, 192);
   display: flex;
   flex-direction: row-reverse;
